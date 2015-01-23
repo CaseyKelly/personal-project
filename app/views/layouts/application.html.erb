@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PersonalProject</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="container">
+      <!-- navbar here -->
+    </div>
+  </div>
+
+  <div class="container">
+
+    <%= yield %>
+
+  </div>
+
+  <div class="container">
+
+  <footer>
+      <div class="row">
+
+        <div class= "col-md-6">
+          Created by Casey Kelly
+        </div>
+
+        <div class="col-md-6 text-right">
+          <a href="https://www.linkedin.com/in/caseyjkelly/">
+            <%= image_tag("linked_in-f852478f8950eb3fca3367cb545aaa52.jpg", class: "img-footer") %>
+          </a>
+          <a href="https://github.com/CaseyKelly">
+            <%= image_tag("GitHub-de8164cc6a609537cfdab331e002ebb3.png", class: "img-footer") %>
+          </a>
+          <a href="https://twitter.com/caseyk819">
+            <%= image_tag("Twitter-0c8c529fb7181e05ab5c30416e3a70fa.png", class: "img-footer") %>
+          </a>
+          <a href="https://students.gschool.it/students/195">
+            <%= image_tag("galvanize-g-b3da24895ed7d4fd33c43d9226c16242.png", class: "img-footer") %>
+          </a>
+        </div>
+
+      </div>
+  </footer>
+
+  </div>
+
+</body>
+</html>
